@@ -4,7 +4,7 @@
     padding: 0;
 }
 @font-face {
-    font-family: docalisme;
+    font-family: 'next';
     src: url(../fonts/DOCALLISME\ ON\ STREET.ttf);
 }
 header{
@@ -13,14 +13,35 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header a{
     font-size: 1.3em;
     font-family: 'Merriweather', serif;
 }
 header h2{
-    font-family: docalisme;
-    font-size: 4em;
+    font-family: next;
+    font-size: 6em;
+}
+.titulo{
+    animation-name: letter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+}
+@keyframes letter{
+    0%{
+        letter-spacing: 0;
+    }
+    50%{
+        letter-spacing: 0.1em;
+    }
+    100%{
+        letter-spacing: 0;
+    }
 }
 header p{
     font-family: 'Merriweather', serif;
@@ -53,7 +74,29 @@ nav a, nav p{
         font-size: 2.5em;
     }
 }
-.btns{
-    background-color: crimson;
-    font-family: 'Merriweather', serif;
+@keyframes borda{
+    0%{
+        border: 0;
+    }
+    50%{
+        border: 0.1em red;
+    }
+    100%{
+        border: 0;
+    }
 }
+.btns{
+    background-color: #ffffff;
+    font-family: 'Merriweather', serif;
+    border: white solid 3px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.btns::before{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    top: 0;
+    left: 0;
+}
+
