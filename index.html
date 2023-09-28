@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <div class="menu fechado">
+        <div class="w-100 d-flex justify-content-end align-items-center">
+            <i id="fm" class="fa-solid fa-x m-2" style="color: #ffffff; scale: 2;" onclick="fecharmenu()"></i>
+        </div>
+    </div>
     <header class="container-fluid d-flex flex-column">
         <nav
             class="row-md-12 align-self-lg-start d-flex flex-row mt-3 justify-content-lg-center justify-content-end align-items-center w-100 gap-5">
@@ -23,7 +28,7 @@
             <a class="text-decoration-none text-white" href="">Galeria</a>
             <a class="text-decoration-none text-white" href="">Artistas</a>
             <div class="d-lg-none">
-                <i class="fa-solid fa-bars" style="color: #ffffff; scale: 1.5;"></i>
+                <i class="fa-solid fa-bars botao" style="color: #ffffff; scale: 2;" onclick="abrirmenu(event)"></i>
             </div>
         </nav>
         <div class="row d-flex flex-direction-column h-100 justify-content-center align-self-center">
@@ -39,11 +44,12 @@
                         <p class="text-white">• • • 1998 • • •</p>
                     </div>
                 </div>
-                <button class="btns w-sm-75 text-black rounded-4 px-3 py-2 mt-5"><span>Agende Sua Tatuagem!</span></button>
+                <button class="btns w-sm-75 text-black rounded-4 px-3 py-2 mt-5"><span>Agende Sua
+                        Tatuagem!</span></button>
             </div>
         </div>
     </header>
-    <script src=""></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
