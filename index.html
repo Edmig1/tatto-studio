@@ -15,13 +15,41 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Agendamento de Tatuagem</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center align-items-start">
+                <div class="">
+                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="">
+                    <label for="exampleInputEmail1" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="">
+                    <label for="exampleInputPassword1" class="form-label">Data</label>
+                    <input type="date" class="form-control" id="exampleInputPassword1">
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Agendar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="menu fechado">
         <div class="w-100 d-flex justify-content-end align-items-center">
             <i id="fm" class="fa-solid fa-x m-3" style="color: #ffffff; scale: 2;" onclick="fecharmenu()"></i>
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center div-menu">
             <a class="text-decoration-none text-white" href="">Home</a>
-            <a class="text-decoration-none text-white" href="">Elementos</a>
+            <a class="text-decoration-none text-white" href="">Dicas</a>
             <a class="text-decoration-none text-white" href="">Galeria</a>
             <a class="text-decoration-none text-white" href="#select">Artistas</a>
         </div>
@@ -29,10 +57,11 @@
     <header class="container-fluid d-flex flex-column">
         <nav
             class="row-md-12 align-self-lg-start d-flex flex-row mt-3 justify-content-lg-center justify-content-end align-items-center w-100 gap-5">
-            <a class="text-decoration-none text-white" href="">Home</a>
-            <a class="text-decoration-none text-white" href="">Elementos</a>
-            <a class="text-decoration-none text-white" href="">Galeria</a>
-            <a class="text-decoration-none text-white" href="#select">Artistas</a>
+            <a class="text-decoration-none" href="">Home</a>
+            <a class="text-decoration-none" href="">Dicas</a>
+            <a class="text-decoration-none" href="">Galeria</a>
+            <a class="text-decoration-none t
+            " href="#select">Artistas</a>
             <div class="d-lg-none">
                 <i class="fa-solid fa-bars botao" style="color: #ffffff; scale: 2;" onclick="abrirmenu(event)"></i>
             </div>
@@ -50,12 +79,12 @@
                         <p class="text-white">• • • 1998 • • •</p>
                     </div>
                 </div>
-                <button class="btns w-sm-75 text-black rounded-4 px-3 py-2 mt-5"><span>Agende Sua
+                <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btns w-sm-75 text-black rounded-4 px-3 py-2 mt-5"><span>Agende Sua
                         Tatuagem!</span></button>
             </div>
         </div>
     </header>
-    <main class="container-fluid d-flex justify-content-center align-items-center" style="background-color:#1f1f1f;;">
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center" style="background-color:#1f1f1f;;">
         <section class="row desc-art mt-5 mb-5 pb-3">
             <div class="col-md-12 div-select d-flex flex-column justify-content-center align-items-center">
                 <select name="select" id="select" onchange="mudar()">
@@ -74,6 +103,34 @@
             <div class="col-md-12 col-lg-6">
                 <img class="img-art rounded-3" src="assets/imgs/tattoos.png" style="width: 100%;" alt="">
             </div>
+        </section>
+        <section class="row galeria mb-5">
+            <div class="col">
+                <div class="row g-3 pb-3 altura">
+                    <div class="col-md-12 div-select w-100 d-flex flex-column align-items-center justify-content-center">
+                        <select name="select2" id="select2" onchange="portifolio()">
+                            <option value="p0">Portifólio dos Artistas</option>
+                            <option value="p1">Jeff</option>
+                            <option value="p2">Azzy</option>
+                            <option value="p3">Jhonny</option>
+                            <option value="p4">Henry</option>
+                        </select>
+                        <h3 class="titulo-port pt-2 text-white">Portifólio:</h3>
+                    </div>
+                    <div class="col-md-4 img-div text-center">
+                        <img class="img-p-1" src="assets/imgs/jeff.png" alt="">
+                    </div>
+                    <div class="col-md-4 img-div" style="text-align: center;">
+                        <img class="img-p-2" src="assets/imgs/jeff.png" alt="">
+                    </div>
+                    <div class="col-md-4 img-div" style="text-align: center;">
+                        <img class="img-p-3" src="assets/imgs/jeff.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+
         </section>
     </main>
     <script src="assets/scripts/script.js"></script>
