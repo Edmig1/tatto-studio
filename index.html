@@ -19,6 +19,12 @@
         <div class="w-100 d-flex justify-content-end align-items-center">
             <i id="fm" class="fa-solid fa-x m-3" style="color: #ffffff; scale: 2;" onclick="fecharmenu()"></i>
         </div>
+        <div class="d-flex flex-column justify-content-center align-items-center div-menu">
+            <a class="text-decoration-none text-white" href="">Home</a>
+            <a class="text-decoration-none text-white" href="">Elementos</a>
+            <a class="text-decoration-none text-white" href="">Galeria</a>
+            <a class="text-decoration-none text-white" href="#select">Artistas</a>
+        </div>
     </div>
     <header class="container-fluid d-flex flex-column">
         <nav
@@ -26,7 +32,7 @@
             <a class="text-decoration-none text-white" href="">Home</a>
             <a class="text-decoration-none text-white" href="">Elementos</a>
             <a class="text-decoration-none text-white" href="">Galeria</a>
-            <a class="text-decoration-none text-white" href="">Artistas</a>
+            <a class="text-decoration-none text-white" href="#select">Artistas</a>
             <div class="d-lg-none">
                 <i class="fa-solid fa-bars botao" style="color: #ffffff; scale: 2;" onclick="abrirmenu(event)"></i>
             </div>
@@ -49,6 +55,27 @@
             </div>
         </div>
     </header>
+    <main class="container-fluid d-flex justify-content-center align-items-center" style="background-color:#1f1f1f;;">
+        <section class="row desc-art mt-5 mb-5 pb-3">
+            <div class="col-md-12 div-select d-flex flex-column justify-content-center align-items-center">
+                <select name="select" id="select" onchange="mudar()">
+                    <option value="t0">Escolha seu tatuador</option>
+                    <option value="t1">Jeff</option>
+                    <option value="t2">Azzy</option>
+                    <option value="t3">Jhonny</option>
+                    <option value="t4">Henry</option>
+                </select>
+                <h1 class="text-white titulo-art py-3 px-3">Sobre Nossa Empresa</h1>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center text-white">
+                <p class="texto">A Flash Tatto é uma renomada empresa fundada por Bruno Cardoso em 2005, que se destaca no mercado pela sua excelência no fornecimento de serviços relacionados à indústria de tatuagens temporárias e personalizadas. Com uma trajetória notável ao longo de quase duas décadas, a empresa consolidou sua posição como líder do setor, combinando criatividade, inovação e qualidade em todos os aspectos de seu empreendimento.
+                    Desde a sua fundação, a Flash Tatto tem se empenhado em atender às crescentes demandas dos clientes por tatuagens temporárias que sejam tanto esteticamente atraentes quanto seguras para a pele.</p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <img class="img-art rounded-3" src="assets/imgs/tattoos.png" style="width: 100%;" alt="">
+            </div>
+        </section>
+    </main>
     <script src="assets/scripts/script.js"></script>
 </body>
 
