@@ -122,6 +122,7 @@ nav a, nav p{
     background-color: #29262b;
 }
 .galeria{
+    border-radius: 10px;
     width: 80%;
 }
 .galeriaaberta{
