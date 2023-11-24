@@ -230,6 +230,9 @@ nav a:hover::after {
   box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.164);
   cursor: pointer;
 }
+.cards:tar{
+  border: 1px solid white;
+}
 
 .cards div {
   height: 50%;
@@ -265,6 +268,7 @@ nav a:hover::after {
 
 .redes img {
   transition: 0.3s ease-in-out;
+  padding: 0px 5px;
 }
 
 .redes img:hover {
