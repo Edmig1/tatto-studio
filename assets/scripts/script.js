@@ -128,5 +128,20 @@ function portifolio() {
         for (var i = 0; i < 4; i++) {
             imgs[i].style.display = 'none'
         }
+    }}
+    redes = document.getElementsByClassName('redes')[0]
+    btn = document.getElementsByClassName('btn-contato')[0]
+    footer = document.getElementsByClassName('footer')[0]
+function contato(){
+    if (redes.style.right == '-20%'){
+        redes.style.right = '2%'
+        btn.innerHTML = 'Fechar contato'
+        btn.style.right ='85%'
+    }
+    else if(redes.style.right == '2%'){
+        redes.style.right = '-20%'
+        btn.innerHTML = 'Entrar em contato'
+        btn.style.right ='50%'
+
     }
 }

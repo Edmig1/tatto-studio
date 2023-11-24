@@ -101,13 +101,12 @@ nav a, nav p{
 }
 .menu{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     height: 100vh;
     width: 40vw;
     background-image: url(../imgs/mesh-284.png);
     background-image: 10% 10%;
     transition: 0.7s ease-in-out;
-    
 }
 .fechado{
     right: -70%;
@@ -190,4 +189,65 @@ nav a, nav p{
   }
   .titulo-port{
     display: none;
+  }
+  .sec-cards{
+    height: 80vh;
+  }
+  .titulo-benef{
+    color: white;
+  }
+  .cards-benef{
+    gap: 20px;
+    justify-content:space-around;
+  }
+  .cards{
+    width: 20%;
+    border-radius: 20px;
+    height: 90%;
+    background-color: #29262b;
+    transition: 0.5s ease-in-out;
+  }
+  .cards:hover{
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.164);
+    cursor: pointer;
+  }
+  .cards div{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .cards div i{
+    font-size: 7em;
+  }
+  .footer{
+    transition: 1s ease-in-out;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background-color: #29262b;
+    padding: 0px 20px;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .redes{
+    z-index: 2;
+    position: absolute;
+    right: -20%;
+    transition: 1s ease-in-out;
+  }
+  .redes img{
+    transition: 0.3s ease-in-out;
+  }
+  .redes img:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .btn-contato{
+    position: absolute;
+    right: 50%;
+    transition: 1s ease-in-out;
+    transform: translateX(+50%);
   }
